@@ -1,0 +1,109 @@
+:root{
+    --Brightorange: hsl(31, 77%, 52%);
+    --Darkcyan: hsl(184, 100%, 22%);
+    --Verydarkcyan: hsl(179, 100%, 13%);
+    --Transparentwhite : hsla(0, 0%, 100%, 0.75);
+    --Verylightgray : hsl(0, 0%, 95%);
+}
+
+body{
+    background-color: var(--Verylightgray);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Lexend Deca', sans-serif;
+    box-sizing: border-box; 
+}
+
+.main-containar{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: center ;
+    margin: auto;
+    transform: translateY(30%);
+}
+
+.flex-1{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    align-content: flex-start;
+    width: 300px;
+    height: 500px;
+    justify-content: space-evenly;
+    padding-left: 45px;
+    color: white;
+    padding-right: 40px;
+}
+
+.sed{
+    background-color: var(--Brightorange); 
+}
+
+.suv{
+    background-color: var(--Darkcyan);
+}
+
+.lux{
+    background-color: var(--Verydarkcyan);
+}
+
+h1{
+    font-family: 'Big Shoulders Display', cursive;
+    color: var(--Verylightgray);
+    text-transform: uppercase  ;
+}
+
+p{
+    font-size: 15px;
+    color:var(--Transparentwhite);
+    word-spacing: 1.6px;
+    line-height: 30px;
+}
+
+#lux{
+    color: var(--Verydarkcyan);
+}
+
+a{
+    text-decoration: none;
+    background-color: var(--Verylightgray);
+    padding:12px ;
+    width: 150px;
+    border-radius: 100px;
+    text-align: center;
+    border: solid 2px var(--Transparentwhite);
+}
+
+#lux:hover{
+    color: var(--Transparentwhite);
+    background-color: var(--Verydarkcyan);
+}
+
+#suv:hover{
+    color: var(--Transparentwhite);
+    background-color: var(--Darkcyan);
+}
+
+#sed:hover{
+    color: var(--Transparentwhite);
+    background-color: var(--Brightorange);
+}
+
+#sed{
+    color: var(--Brightorange);
+}
+
+#suv{
+    color:var(--Darkcyan) ;
+}
+@media(max-width:375px){
+    .main-containar{
+        flex-direction: column;
+        transform: translateY(10%);
+    }
+}
